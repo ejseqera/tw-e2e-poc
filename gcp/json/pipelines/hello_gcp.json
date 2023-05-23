@@ -1,0 +1,11 @@
+{
+  "launch": {
+    "pipeline": "https://github.com/nextflow-io/hello",
+    "revision": "",
+    "configText": "machineType = 'a2-*'",
+    "paramsText": "",
+    "resume": false,
+    "pullLatest": false,
+    "stubRun": false
+  }
+}

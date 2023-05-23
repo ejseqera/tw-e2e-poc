@@ -1,0 +1,15 @@
+{
+  "description": "Pipeline for assembly and intrahost/low-frequency variant calling for viral samples.",
+  "launch": {
+    "pipeline": "https://github.com/nf-core/viralrecon",
+    "revision": "2.5",
+    "configProfiles": [
+      "test"
+    ],
+    "configText": "process {\n   errorStrategy = 'retry'\n   maxRetries = 3\n   scratch = false\n}",
+    "paramsText": "outdir: 'gs://nf-tower-test-eu-1/esha/viralrecon_test/no_fusionV2_2023_24_04'",
+    "resume": false,
+    "pullLatest": false,
+    "stubRun": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "location": "europe-west2",
+  "workDir": "gs://seqeralabs-showcase",
+  "spot": true,
+  "bootDiskSizeGb": 200,
+  "projectId": "seqera-labs-showcase",
+  "sshDaemon": false,
+  "usePrivateAddress": false,
+  "environment": [],
+  "discriminator": "google-batch"
+}

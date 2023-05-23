@@ -1,0 +1,28 @@
+{
+  "region" : "eu-west-1",
+  "cliPath" : "/home/ec2-user/miniconda/bin/aws",
+  "workDir" : "/fsx/work",
+  "headJobCpus" : 2,
+  "headJobMemoryMb" : 8192,
+  "environment" : [ ],
+  "waveEnabled" : false,
+  "fusion2Enabled" : false,
+  "forge" : {
+    "type" : "EC2",
+    "minCpus" : 0,
+    "maxCpus" : 500,
+    "gpuEnabled" : false,
+    "ebsAutoScale" : true,
+    "instanceTypes" : [ "c6i", "m6i", "r6i" ],
+    "subnets" : [ ],
+    "securityGroups" : [ ],
+    "fsxMount" : "/fsx",
+    "fsxSize" : 2400,
+    "disposeOnDeletion" : true,
+    "ec2KeyPair" : "jordeu-vallibierna",
+    "allowBuckets" : [ "s3://scidev-eu-west-1", "s3://ngi-igenomes", "s3://nf-core-awsmegatests" ],
+    "efsCreate" : false,
+    "dragenEnabled" : false
+  },
+  "discriminator" : "aws-batch"
+}

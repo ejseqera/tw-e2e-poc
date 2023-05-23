@@ -1,0 +1,10 @@
+{
+  "location": "us-central1",
+  "workDir": "gs://nf-tower-test-us-central-1",
+  "spot": true,
+  "projectId": "tower-cloud-testing",
+  "sshDaemon": false,
+  "usePrivateAddress": false,
+  "environment": [],
+  "discriminator": "google-batch"
+}

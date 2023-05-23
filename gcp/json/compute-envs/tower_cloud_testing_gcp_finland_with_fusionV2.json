@@ -1,0 +1,10 @@
+{
+  "location" : "europe-north1",
+  "workDir" : "gs://nf-tower-test-eu-1/esha",
+  "spot" : true,
+  "projectId" : "tower-cloud-testing",
+  "sshDaemon" : false,
+  "usePrivateAddress" : false,
+  "environment" : [ ],
+  "discriminator" : "google-batch"
+}

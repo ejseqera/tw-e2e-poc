@@ -1,0 +1,15 @@
+{
+  "description" : "nf-core/sarek full-sized tests with '-profile test_full'",
+  "launch" : {
+    "pipeline" : "https://github.com/nf-core/sarek",
+    "revision" : "3.1.2",
+    "configProfiles" : [ "test_full" ],
+    "userSecrets" : [ ],
+    "workspaceSecrets" : [ ],
+    "configText" : "process.errorStrategy = 'retry'\nprocess.maxRetries = 3",
+    "paramsText" : "",
+    "resume" : false,
+    "pullLatest" : false,
+    "stubRun" : false
+  }
+}

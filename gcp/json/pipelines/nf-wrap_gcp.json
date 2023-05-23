@@ -1,0 +1,11 @@
+{
+  "description": "single task pipeline",
+  "launch": {
+    "pipeline": "https://github.com/nf-wrap/main",
+    "revision": "0.1",
+    "paramsText": "test: true\ntools: 'fastqc'",
+    "resume": false,
+    "pullLatest": false,
+    "stubRun": false
+  }
+}

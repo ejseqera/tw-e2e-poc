@@ -1,0 +1,25 @@
+{
+  "region" : "eu-west-1",
+  "dragenQueue" : "TowerForge-7n0vqfOmvzm3NXKOp99Z9q-dragen",
+  "executionRole" : "arn:aws:iam::893329243595:role/TowerForge-7n0vqfOmvzm3NXKOp99Z9q-ExecutionRole",
+  "cliPath" : "/home/ec2-user/miniconda/bin/aws",
+  "workDir" : "s3://nf-tower-bucket",
+  "environment" : [ ],
+  "forge" : {
+    "type" : "SPOT",
+    "minCpus" : 0,
+    "maxCpus" : 500,
+    "gpuEnabled" : false,
+    "ebsAutoScale" : true,
+    "instanceTypes" : [ ],
+    "subnets" : [ ],
+    "securityGroups" : [ ],
+    "disposeOnDeletion" : true,
+    "allowBuckets" : [ ],
+    "fusionEnabled" : false,
+    "efsCreate" : false,
+    "dragenEnabled" : true,
+    "dragenAmiId" : "ami-0cbc905b0ead68198"
+  },
+  "discriminator" : "aws-batch"
+}

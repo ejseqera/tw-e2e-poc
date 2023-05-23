@@ -1,0 +1,25 @@
+{
+  "region" : "eu-west-1",
+  "cliPath" : "/home/ec2-user/miniconda/bin/aws",
+  "workDir" : "s3://scidev-eu-west-1",
+  "environment" : [ ],
+  "waveEnabled" : true,
+  "fusion2Enabled" : true,
+  "nvnmeStorageEnabled" : true,
+  "forge" : {
+    "type" : "EC2",
+    "minCpus" : 0,
+    "maxCpus" : 500,
+    "gpuEnabled" : false,
+    "instanceTypes" : [ "c6id", "m6id", "r6id" ],
+    "subnets" : [ ],
+    "securityGroups" : [ ],
+    "disposeOnDeletion" : true,
+    "ec2KeyPair" : "jordeu-vallibierna",
+    "allowBuckets" : [ "s3://ngi-igenomes", "s3://nf-core-awsmegatests" ],
+    "efsCreate" : false,
+    "dragenEnabled" : false,
+    "ebsBootSize" : 100
+  },
+  "discriminator" : "aws-batch"
+}

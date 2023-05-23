@@ -1,0 +1,15 @@
+{
+  "description": "Analysis pipeline to detect germline or somatic variants (pre-processing, variant calling and annotation) from WGS / targeted sequencing.",
+  "launch": {
+    "pipeline": "https://github.com/nf-core/sarek",
+    "revision": "3.1.2",
+    "configProfiles": [
+      "test_full"
+    ],
+    "configText": "process.errorStrategy = 'retry'\nprocess.maxRetries = 3",
+    "paramsText": "igenomes_base: \"gs://scidev/igenomes\"\nintervals: \"gs://scidev/megatests/sarek/input/S07604624_Padded_Agilent_SureSelectXT_allexons_V6_UTR.bed\"",
+    "resume": false,
+    "pullLatest": false,
+    "stubRun": false
+  }
+}
