@@ -1,0 +1,15 @@
+{
+  "description": "nf-core/rnaseq full-sized tests with '-profile test_full'",
+  "launch": {
+    "pipeline": "https://github.com/nf-core/rnaseq",
+    "revision": "3.11.0",
+    "configProfiles": [
+      "test_full"
+    ],
+    "configText": "",
+    "paramsText": "",
+    "resume": false,
+    "pullLatest": false,
+    "stubRun": false
+  }
+}
